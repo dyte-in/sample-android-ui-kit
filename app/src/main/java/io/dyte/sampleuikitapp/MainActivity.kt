@@ -18,12 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         btnJoinIn.setOnClickListener {
             val meetingInfo = DyteMeetingInfo(
-                orgId = ORGNIZATION_ID,
                 roomName = MEETING_ROOM_NAME,
                 authToken = AUTH_TOKEN,
                 enableAudio = true,
-                enableVideo = true,
-                displayName = "Android UI Kit Sample App"
+                enableVideo = true
             )
             val config = DyteUIKitConfig(
                 activity = this,
